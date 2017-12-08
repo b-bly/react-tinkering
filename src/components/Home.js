@@ -34,7 +34,25 @@ export class Home extends Component {
                 <Header />
                 <p>This is home</p>
                 <Link to='/time'>Time link</Link>
-                <Square style={this.state.style}
+                <Intermediate style={this.state.style}
+                    handleClick={this.handleClick} />
+            </div>
+        );
+    }
+}
+
+class Intermediate extends Component {
+    constructor(props) {
+        super(props);
+        this.handleClick = this.handleClick.bind(this);
+    }
+    handleClick() {
+        this.props.handleClick();
+    }
+    render() {
+        return (
+            <div>
+                <Square style={this.props.style}
                     handleClick={this.handleClick} />
             </div>
         );
