@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import 'whatwg-fetch';
+
+//read more at https://reacttraining.com/react-router/web/guides/quick-start
 import {
   BrowserRouter as Router,
   Route, Switch
